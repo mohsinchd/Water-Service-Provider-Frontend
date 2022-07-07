@@ -1,0 +1,72 @@
+/* Showcase products */
+
+#showcase-product {
+  margin-top: 55px;
+  background: rgb(44, 112, 255);
+  background: linear-gradient(
+    212deg,
+    rgba(44, 112, 255, 1) 0%,
+    rgba(2, 1, 6, 1) 61%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+
+  height: 500px;
+  padding-top: 50px;
+}
+
+#card-showcase {
+  margin-top: -100px;
+}
+
+/* Utilties */
+
+.gradient-font {
+  font-weight: bold;
+  background: -webkit-linear-gradient(dodgerblue, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Product-heading */
+
+#product-headings {
+  background-color: black;
+  margin-top: 50px;
+}
+
+/* Animated Card Styling*/
+.box {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.box .box-img {
+  transform: rotateY(0);
+  transition: all 0.5s ease-in-out 0s;
+}
+.box:hover .box-img {
+  transform: rotateY(-90deg);
+}
+.box .box-img img {
+  width: 100%;
+  height: auto;
+}
+.box .box-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 60px 20px;
+  border: 3px solid dodgerblue;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  transform: rotateY(90deg);
+  transition: all 0.5s ease-in-out 0s;
+}
+.box:hover .box-content {
+  transform: rotateY(0);
+}

@@ -1,0 +1,12 @@
+#product-navbar .nav-item a {
+  display: inline;
+}
+
+#product-navbar .nav-item p {
+  display: inline;
+}
+
+#dropdown-section .dropdown-menu {
+  background: none;
+  border: none;
+}
